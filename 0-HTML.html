@@ -46,6 +46,69 @@
 
 <!-- все що пов'язано з контентом буде тут: -->
 <body>
+    <!-- Тег вступної секції, шапка -->
+    <header> header може бути декілька, в залежності від потреб. </header>
     
+    <!-- тег контейнер в який можна вкладати будь який інший тег з контентом -->
+    <div>
+
+        span - Тег-контейнер для <span>тексту</span>, який його може стилізувати.
+        
+        <p> р - Параграф. Тег тексту незалежної секції. </p>
+        
+    </div>
+
+    <!-- Тег який визначає основний вміст контенту -->
+    <main> main. Вміст цього елемента має бути унікальним для документа. Такого тегу не має бути більше одного. Він не має походити від article, aside, footer, header, nav, тобто тегів які не мають основного контенту. </main>
+
+    <article> article - Тег який визначає контент статті в документі. </article>
+
+    <!-- Тег який вказує незалежні секції. Які дів, але для секції сайту. -->
+    <section>
+        <div>
+            <p>текст незалежної <span style="color: blue;">секції</span> сайту</p>
+        </div>
+    </section>
+
+    <!-- тег який визначає навігаційні посилання -->
+    <nav>
+        <!-- тег посилання -->
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a>
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a>
+        <a href="https://www.w3schools.com/js/default.asp" target="_blank">JS</a>
+    </nav>
+
+    <!-- Тег бічної панелі: -->
+    <aside>
+
+        <h3> Тег aside + цей h3 заголовок + внизу невпорядкований список: </h3>
+        <!-- Тег невпорядкованого списку -->
+        <ul>
+            
+            <!-- Тег елемента списку -->
+            <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a></li>
+            <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">JS</a></li>
+        </ul>
+    </aside>
+
+    <footer> footer - Тег який визначає кінцеву секцію, або підвал </footer>
+
+    <section>
+        <div>
+            <h3>Глобальні атрибути</h3>
+            <ul>
+                <li>hidden - сховати тег з екрану</li>
+                <li>id='value' - надати ідентифікатор тегу</li>
+                <li>class='value' - надати класу тегу</li>
+                <li>title='value' - надати заголовок тегу</li>
+                <li>style=''value - надати стилю</li>
+                <li>lang='value' - інформація про мову контенту</li>
+                <li>contenteditable - вказує, якщо треба дати змогу редагувати вміст тегу</li>
+                <li>dir='ltr' або 'rtl' - вказує напрямок тексту, зліва-направо або справа-наліво.</li>
+                <li>draggable='true' - змога переміщати контент мишкою</li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
