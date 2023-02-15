@@ -1,114 +1,201 @@
-<!DOCTYPE html>  <!-- тип документу -->
+<!DOCTYPE html>
+<!-- тип документу -->
 
 <!-- Базовий тег, кореневий тег всіх тегів; атрибути: lang="en" <-> це мова сайту -->
 <html lang="en">
+  <!-- конфігураційний тег, ця інформація не зображається на сайті -->
+  <head>
+    <!-- назва сторінки у вкладці -->
+    <title>HTML IT BRAINS</title>
 
-<!-- конфігураційний тег, ця інформація не зображається на сайті -->
-<head>
-
-<!-- назва сторінки у вкладці -->
-    <title>Document</title>
-
-<!-- тег який вказує початковий URL шлях до файлів (тобто до файлу на сервері) -->
+    <!-- тег який вказує початковий URL шлях до файлів (тобто до файлу на сервері) -->
     <!-- target="_blank" - відкривається у новому вікні -->
     <!-- target="_top" - відкривається у батьківському вікні -->
     <!-- target="_parent" - у батьківському фреймі -->
     <!-- target="_self" - в тому ж фреймі -->
-    <base href="https://www.w3schools.com/" target="_blank">
+    <base href="https://www.w3schools.com/" target="_blank" />
 
-<!-- тег який вказує метадані документа, дуже потрібно для СЕО -->
+    <!-- тег який вказує метадані документа, дуже потрібно для СЕО -->
     <!-- шифрування -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!-- name - вказуємо тип метаданих; content - контент для назв метаданих -->
     <!-- description - опис сторінки -->
-    <meta name="description" content="Це тестова сторінка">
+    <meta name="description" content="Це тестова сторінка" />
     <!-- generator - яка технологія використовується для генерації сторінки сайту; не є обов'язковим -->
-    <meta name="generator" content="HTML">
+    <meta name="generator" content="HTML" />
     <!-- keywords - список ключових слів -->
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
     <!-- author - хто створив -->
-    <meta name="author" content="IT Brains">
+    <meta name="author" content="IT Brains" />
     <!-- viewport - вказує як треба зображати контент -->
-    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<!-- теги більше для бек-енду -->
+    <!-- теги більше для бек-енду -->
     <!-- http-equiv - вказує на метадані для HTTP відповіді -->
     <!-- content-security-policy - політика вмісту для документа -->
-    <meta http-equiv="content-security-policy" content="default-src 'self'">
+    <meta http-equiv="content-security-policy" content="default-src 'self'" />
     <!-- content-type - визначає кодування символів для документа -->
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <!-- default-style - визначає таблицю стилів по замовчуванням -->
-    <meta http-equiv="default-style" content="the document's preferred stylesheet">
+    <meta
+      http-equiv="default-style"
+      content="the document's preferred stylesheet"
+    />
     <!-- refresh - інтервал оновлення сторінки -->
-    <meta http-equiv="refresh" content="300">
+    <meta http-equiv="refresh" content="300" />
+  </head>
 
-</head>
-
-<!-- все що пов'язано з контентом буде тут: -->
-<body>
+  <!-- все що пов'язано з контентом буде тут: -->
+  <body>
     <!-- Тег вступної секції, шапка -->
-    <header> header може бути декілька, в залежності від потреб. </header>
-    
+    <header>header може бути декілька, в залежності від потреб.</header>
+
     <!-- тег контейнер в який можна вкладати будь який інший тег з контентом -->
     <div>
+      span - Тег-контейнер для <span style="color: blue">тексту</span>, який
+      його може стилізувати.
 
-        span - Тег-контейнер для <span>тексту</span>, який його може стилізувати.
-        
-        <p> р - Параграф. Тег тексту незалежної секції. </p>
-        
+      <p>р - Параграф. Тег тексту незалежної секції.</p>
     </div>
 
     <!-- Тег який визначає основний вміст контенту -->
-    <main> main. Вміст цього елемента має бути унікальним для документа. Такого тегу не має бути більше одного. Він не має походити від article, aside, footer, header, nav, тобто тегів які не мають основного контенту. </main>
+    <main>
+      main. Вміст цього елемента має бути унікальним для документа. Такого тегу
+      не має бути більше одного. Він не має походити від article, aside, footer,
+      header, nav, тобто тегів які не мають основного контенту.
+    </main>
 
-    <article> article - Тег який визначає контент статті в документі. </article>
+    <article>article - Тег який визначає контент статті в документі.</article>
 
     <!-- Тег який вказує незалежні секції. Які дів, але для секції сайту. -->
     <section>
-        <div>
-            <p>текст незалежної <span style="color: blue;">секції</span> сайту</p>
-        </div>
+      <div>
+        <p>текст незалежної <span style="color: blue">секції</span> сайту</p>
+      </div>
     </section>
 
     <!-- тег який визначає навігаційні посилання -->
     <nav>
-        <!-- тег посилання -->
-        <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a>
-        <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a>
-        <a href="https://www.w3schools.com/js/default.asp" target="_blank">JS</a>
+      <!-- тег посилання -->
+      <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+        >HTML</a
+      >
+      <a href="https://www.w3schools.com/css/default.asp" target="_blank"
+        >CSS</a
+      >
+      <a href="https://www.w3schools.com/js/default.asp" target="_blank">JS</a>
     </nav>
 
     <!-- Тег бічної панелі: -->
     <aside>
-
-        <h3> Тег aside + цей h3 заголовок + внизу невпорядкований список: </h3>
-        <!-- Тег невпорядкованого списку -->
-        <ul>
-            
-            <!-- Тег елемента списку -->
-            <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a></li>
-            <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a></li>
-            <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">JS</a></li>
-        </ul>
+      <h3>Тег aside + цей h3 заголовок + внизу невпорядкований список:</h3>
+      <!-- Тег невпорядкованого списку -->
+      <ul>
+        <!-- Тег елемента списку -->
+        <li>
+          <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+            >HTML</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/css/default.asp" target="_blank"
+            >CSS</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/js/default.asp" target="_blank"
+            >JS</a
+          >
+        </li>
+      </ul>
     </aside>
 
-    <footer> footer - Тег який визначає кінцеву секцію, або підвал </footer>
+    <footer>footer - Тег який визначає кінцеву секцію, або підвал</footer>
 
     <section>
-        <div>
-            <h3>Глобальні атрибути</h3>
-            <ul>
-                <li>hidden - сховати тег з екрану</li>
-                <li>id='value' - надати ідентифікатор тегу</li>
-                <li>class='value' - надати класу тегу</li>
-                <li>title='value' - надати заголовок тегу</li>
-                <li>style=''value - надати стилю</li>
-                <li>lang='value' - інформація про мову контенту</li>
-                <li>contenteditable - вказує, якщо треба дати змогу редагувати вміст тегу</li>
-                <li>dir='ltr' або 'rtl' - вказує напрямок тексту, зліва-направо або справа-наліво.</li>
-                <li>draggable='true' - змога переміщати контент мишкою</li>
-            </ul>
-        </div>
+      <div>
+        <h3>Глобальні атрибути</h3>
+        <ul>
+          <li>hidden - сховати тег з екрану</li>
+          <li>id='value' - надати ідентифікатор тегу</li>
+          <li>class='value' - надати класу тегу</li>
+          <li>title='value' - надати заголовок тегу</li>
+          <li>style=''value - надати стилю</li>
+          <li>lang='value' - інформація про мову контенту</li>
+          <li>
+            contenteditable - вказує, якщо треба дати змогу редагувати вміст
+            тегу
+          </li>
+          <li>
+            dir='ltr' або 'rtl' - вказує напрямок тексту, зліва-направо або
+            справа-наліво.
+          </li>
+          <li>draggable='true' - змога переміщати контент мишкою</li>
+        </ul>
+      </div>
     </section>
-</body>
+
+    <section>
+      <h3>Семантичні теги:</h3>
+      <h1>H1 - заголовок, найголовніший, він має бути тільки один</h1>
+      <h2>h2 - менш важливий</h2>
+      <h3>h3 - ще менш важливий</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
+
+      <p>
+        em - Тег який <em>наголошує</em>, написаний курсивом, ніби з певним
+        наголосом.
+      </p>
+
+      <p>strong - тег дуже <strong>важливого</strong> тексту</p>
+
+      <p>
+        b - bold, просто <b>жирний</b> текст, але семантично цей текст не
+        важливий
+      </p>
+
+      <p>mark - тег який, ніби <mark>маркером</mark>, щось позначає</p>
+
+      <p>small - Тег який виділяє <small>неважливий, маленький</small> текст</p>
+
+      <p>
+        i - тег який виділяє текст в альтернативному голосі, для
+        <i>визначень</i> , назв чогось, щось що в "", <i>цікаве</i>,
+        <i>дивне</i> тощо
+      </p>
+
+      <pre>
+        Pre - тег який не потрібно форматувати, 
+        тобто виведе текст так як був написаний 
+        в коді
+        </pre
+      >
+
+      <p>
+        s - тег який позначає текст, який став <s>неправильним</s>,
+        <s>не точним</s>, <s>не актуальним</s>, або <s>застарілим</s> з точки
+        зору контенту
+      </p>
+
+      <p>
+        <del>del</del> - тег який позначає текст який видалений. Він як s, але
+        для видаленого тексту)
+      </p>
+
+      <p>u - тег який визначає контент, який має <u>помилки</u>.</p>
+
+      <p><ins>ins</ins> - тег який визначає текст який був доданий.</p>
+
+      <p><code>code</code> - тег який визначає комп'ютерний код</p>
+
+      <p>sub - H<sub>2</sub>O - тег який визначає підрядковий текст</p>
+
+      <p>sup - 4<sup>2</sup> - тег який визначає надрядковий текст</p>
+    </section>
+  </body>
 </html>
