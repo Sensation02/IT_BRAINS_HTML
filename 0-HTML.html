@@ -1,34 +1,19 @@
 <!DOCTYPE html>
 <!-- тип документу -->
 
-
 <!-- Базовий тег, кореневий тег всіх тегів; атрибути: lang="en" <-> це мова сайту -->
 <html lang="en">
   <!-- конфігураційний тег, ця інформація не зображається на сайті -->
   <head>
-    <!-- назва сторінки у вкладці -->
     <title>HTML IT BRAINS</title>
 
-    <!-- тег який вказує початковий URL шлях до файлів (тобто до файлу на сервері) -->
-    <!-- target="_blank" - відкривається у новому вікні -->
-    <!-- target="_top" - відкривається у батьківському вікні -->
-    <!-- target="_parent" - у батьківському фреймі -->
-    <!-- target="_self" - в тому ж фреймі -->
-    <base href="https://www.w3schools.com/" target="_blank" />
+    <base href="/0-HTML.html" target="_blank" />
 
-    <!-- тег який вказує метадані документа, дуже потрібно для СЕО -->
-    <!-- шифрування -->
     <meta charset="UTF-8" />
-    <!-- name - вказуємо тип метаданих; content - контент для назв метаданих -->
-    <!-- description - опис сторінки -->
     <meta name="description" content="Це тестова сторінка" />
-    <!-- generator - яка технологія використовується для генерації сторінки сайту; не є обов'язковим -->
     <meta name="generator" content="HTML" />
-    <!-- keywords - список ключових слів -->
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <!-- author - хто створив -->
-    <meta name="author" content="IT Brains" />
-    <!-- viewport - вказує як треба зображати контент -->
+    <meta name="author" content="Bazzil aka Sensation02" />
     <meta
       name="viewport"
       content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
@@ -41,19 +26,15 @@
     <!-- content-type - визначає кодування символів для документа -->
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <!-- default-style - визначає таблицю стилів по замовчуванням -->
-    <meta
+    <!-- <meta
       http-equiv="default-style"
       content="the document's preferred stylesheet"
-    />
+    /> -->
     <!-- refresh - інтервал оновлення сторінки -->
     <!-- <meta http-equiv="refresh" content="60" /> -->
 
-    <style>
-      h1 {
-        color: rgb(26, 26, 192);
-      }
-    </style>
-
+    <!-- <style></style> -->
+    <!-- Атрибут media: -->
     <!-- Атрибут media для чого оптимізований CSS код -->
     <!-- all - відходить для всіх пристроїв -->
     <!-- aural - мовні синтезатори -->
@@ -70,8 +51,9 @@
     <!-- scan - вказує метод сканування тв дисплею -->
     <!-- grid - вказує підтримку растрових зображень -->
 
-    <link rel="stylesheet" href="/html-5/styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <!-- тег який призначений для підключення зовнішніх документів, стилів та іконок для логотипу сайту (favicon) -->
+    <!-- Атрибути: -->
     <!-- crossorigin - вказує як оброблювати запит на файл -->
     <!-- ="anonymous" - дозволяє доступ лише до власного домену -->
     <!-- ="use-credentials" - дозволяє доступ до будь якого домену -->
@@ -100,13 +82,15 @@
 
     <script></script>
     <!-- це тег який підключає JS скріпти в документ, також в ньому можна писати JS скріпти прямо в контенті тегу -->
-    <!-- async - паралельно завантажується і виконується -->
-    <!-- defer - паралельно і виконується після завантаження сторінки -->
-    <!-- src - шлях до скрипту -->
-    <!-- integrity="filehash" - вказує браузеру правдивості скрипту -->
-    <!-- nomodule - чи для старих браузерів -->
-    <!-- referrerpolicy - політика CORS -->
-    <!-- type - тип скрипта -->
+    <section>
+      <!-- async - паралельно завантажується і виконується -->
+      <!-- defer - паралельно і виконується після завантаження сторінки -->
+      <!-- src - шлях до скрипту -->
+      <!-- integrity="filehash" - вказує браузеру правдивості скрипту -->
+      <!-- nomodule - чи для старих браузерів -->
+      <!-- referrerpolicy - політика CORS -->
+      <!-- type - тип скрипта -->
+    </section>
 
     <noscript></noscript>
     <!-- тег контейнер для контенту який відображається якщо браузер не підтримує JS -->
@@ -117,96 +101,211 @@
 
   <!-- все що пов'язано з контентом буде тут: -->
   <body>
-    <details>
-      <summary><b>Основні будівельні блоки:</b></summary>
-      <br />
-      <header>
-        <b>header</b> - Тег вступної секції, шапка. Може бути декілька, в
-        залежності від потреб.
-      </header>
-      <br />
-      <!-- тег контейнер в який можна вкладати будь який інший тег з контентом -->
-      <div>
-        <b>span</b> - Тег-контейнер для <span style="color: blue">тексту</span>,
-        який його може стилізувати.
+    <!-- Head: -->
+    <section>
+      <details>
+        <summary>
+          <strong>Head</strong>
+        </summary>
+        <div>
+          <p>
+            <b class="definition_title">head</b> - це конфігураційний тег. В
+            ньому задаються параметри нашого сайту. Далі буде розповідатися про
+            все, що пов'язано із цим тегом.
+          </p>
+        </div>
+        <div>
+          <p>
+            <b class="definition_title">title</b> - тег назви сторінки сайту у
+            відкритих вкладках браузера.
+          </p>
+        </div>
+        <div>
+          <p>
+            <b class="definition_title">base</b> - тег тег який вказує
+            початковий URL шлях до файлів (тобто до файлу на сервері).
+          </p>
+          <ol type="I">
+            <h4>Атрибути тегу:</h4>
+            <li>
+              <b class="definition_title">target="_blank"</b> - відкривається у
+              новому вікні
+            </li>
+            <li>
+              <b class="definition_title">target="_top"</b> - відкривається у
+              батьківському вікні
+            </li>
+            <li>
+              <b class="definition_title">target="_parent"</b> - у батьківському
+              фреймі
+            </li>
+            <li>
+              <b class="definition_title">target="_self"</b> - в тому ж фреймі
+            </li>
+          </ol>
+        </div>
+        <div>
+          <p>
+            <b class="definition_title">meta</b>
+            - тег який вказує метадані документа, дуже потрібно для СЕО.
+          </p>
+          <ol>
+            <h4>Атрибути тегу:</h4>
+            <li>
+              <b class="definition_title">charset="UTF-8"</b> - шифрування
+            </li>
+            <li>
+              <b class="definition_title">
+                name="description" content="Це тестова сторінка"
+              </b>
+              - name - вказуємо тип метаданих; content - контент для назв
+              метаданих; description - опис сторінки.
+            </li>
+            <li>
+              <b class="definition_title">name="generator" content="HTML"</b> -
+              generator - яка технологія використовується для генерації сторінки
+              сайту; не є обов'язковим.
+            </li>
+            <li>
+              <b class="definition_title">
+                name="keywords" content="HTML, CSS, JavaScript"
+              </b>
+              - keywords - список ключових слів.
+            </li>
+            <li>
+              <b class="definition_title"
+                >name="author" content="Bazzil aka Sensation02"</b
+              >
+              - author - хто створив.
+            </li>
+            <li>
+              <b class="definition_title">name="viewport"</b> - вказує як треба
+              зображати контент
+              <ul>
+                <b>content=</b>
+                <li>viewport-fit=cover</li>
+                <li>width=device-width</li>
+                <li>initial-scale=1.0</li>
+                <li>maximum-scale=1.0</li>
+                <li>user-scalable=no</li>
+                <br />
+              </ul>
+              Всі ці параметри треба вказувати в лапках.
+            </li>
+          </ol>
+        </div>
+      </details>
+    </section>
+    <hr />
+    <!-- Основні будівельні блоки: -->
+    <section>
+      <details>
+        <summary><b>Основні будівельні блоки:</b></summary>
+        <br />
+        <header>
+          <b class="definition_title">header</b> - Тег вступної секції, шапка.
+          Може бути декілька, в залежності від потреб.
+        </header>
+        <br />
+        <!-- тег контейнер в який можна вкладати будь який інший тег з контентом -->
+        <div>
+          <b class="definition_title">span</b> - Тег-контейнер для
+          <span>тексту</span>, який його може стилізувати.
 
-        <p><b>р</b> - Параграф. Тег тексту незалежної секції.</p>
-      </div>
+          <p>
+            <b class="definition_title">р</b> - Параграф. Тег тексту незалежної
+            секції.
+          </p>
+        </div>
 
-      <!-- Тег який визначає основний вміст контенту -->
-      <main>
-        <b>main</b>. Вміст цього елемента має бути унікальним для документа.
-        Такого тегу не має бути більше одного. Він не має походити від
-        <i>article, aside, footer, header, nav</i>, тобто тегів які не мають
-        основного контенту.
-      </main>
-      <br />
-      <article>
-        <b>article</b> - Тег який визначає контент статті в документі.
-      </article>
+        <!-- Тег який визначає основний вміст контенту -->
+        <main>
+          <b class="definition_title">main</b>. Вміст цього елемента має бути
+          унікальним для документа. Такого тегу не має бути більше одного. Він
+          не має походити від <i>article, aside, footer, header, nav</i>, тобто
+          тегів які не мають основного контенту.
+        </main>
+        <br />
+        <article>
+          <b class="definition_title">article</b> - Тег який визначає контент
+          статті в документі.
+        </article>
 
-      <!-- Тег який вказує незалежні секції. Як дів, але для секції сайту. -->
-      <section>
-        <p>
-          в <b>section</b> знаходиться текст незалежної
-          <span style="color: blue">секції</span> сайту
-        </p>
-      </section>
+        <!-- Тег який вказує незалежні секції. Як дів, але для секції сайту. -->
+        <section>
+          <p>
+            в <b class="definition_title">section</b> знаходиться текст
+            незалежної <span>секції</span> сайту
+          </p>
+        </section>
 
-      <!-- тег який визначає навігаційні посилання -->
-      <nav>
-        <p>
-          <b>nav</b> - тег який визначає навігаційні посилання. Далі йдуть
-          приклади навігаційного посилання. Тег посилання - <b>а</b>. Зазвичай
-          навігаційна панель зверху, під шапкою сайту бо вище.
-        </p>
-        <ul>
-          <li>
-            <a href="https://www.w3schools.com/html/default.asp" target="_blank"
-              >HTML</a
-            >
-          </li>
-          <li>
-            <a href="https://www.w3schools.com/css/default.asp" target="_blank"
-              >CSS</a
-            >
-          </li>
-          <li>
-            <a href="https://www.w3schools.com/js/default.asp" target="_blank"
-              >JS</a
-            >
-          </li>
-        </ul>
-      </nav>
+        <!-- тег який визначає навігаційні посилання -->
+        <nav>
+          <p>
+            <b class="definition_title">nav</b> - тег який визначає навігаційні
+            посилання. Далі йдуть приклади навігаційного посилання. Тег
+            посилання - <b>а</b>. Зазвичай навігаційна панель зверху, під шапкою
+            сайту бо вище.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://www.w3schools.com/html/default.asp"
+                target="_blank"
+                >HTML</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.w3schools.com/css/default.asp"
+                target="_blank"
+                >CSS</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/js/default.asp" target="_blank"
+                >JS</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-      <!-- Тег бічної панелі: -->
-      <aside>
-        <p>
-          <b>aside</b> - тег бічної панелі, яка знаходиться справа або зліва.
-        </p>
-        <ul>
-          <li>
-            <a href="https://www.w3schools.com/html/default.asp" target="_blank"
-              >HTML</a
-            >
-          </li>
-          <li>
-            <a href="https://www.w3schools.com/css/default.asp" target="_blank"
-              >CSS</a
-            >
-          </li>
-          <li>
-            <a href="https://www.w3schools.com/js/default.asp" target="_blank"
-              >JS</a
-            >
-          </li>
-        </ul>
-      </aside>
+        <!-- Тег бічної панелі: -->
+        <aside>
+          <p>
+            <b class="definition_title">aside</b> - тег бічної панелі, яка
+            знаходиться справа або зліва.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://www.w3schools.com/html/default.asp"
+                target="_blank"
+                >HTML</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.w3schools.com/css/default.asp"
+                target="_blank"
+                >CSS</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/js/default.asp" target="_blank"
+                >JS</a
+              >
+            </li>
+          </ul>
+        </aside>
 
-      <!-- footer -->
-      <footer>footer - Тег який визначає кінцеву секцію, або підвал</footer>
-    </details>
-
+        <!-- footer -->
+        <footer>
+          <b class="definition_title">footer</b> - Тег який визначає кінцеву
+          секцію, або підвал
+        </footer>
+      </details>
+    </section>
     <hr />
     <!-- Глобальні атрибути: -->
     <section>
