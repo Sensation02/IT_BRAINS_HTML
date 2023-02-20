@@ -1,0 +1,108 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9ecec;
+   
+    margin: 0;
+}
+
+header, nav, main, footer {
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+/* Стилі для заголовку */
+header {
+  background-color: #c63939;
+  color: #fff;
+  text-align: center;
+}
+
+/* Стилі для навігації */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #c63939;
+}
+
+/* Стилі для статей */
+main h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article {
+  width: calc(33.3% - 1rem);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+article:hover {
+  transform: translateY(-0.5rem);
+}
+
+article img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+article p {
+  margin: 1rem;
+}
+
+/* Стилі для футера */
+footer {
+  background-color: #c63939;
+  color: #fff;
+  text-align: center;
+}
+
+/* Медіа-запити */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  article {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  article {
+    width: 100%;
+  }
+}
+  

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Мій продукт</title>
+  </head>
+  <body>
+    <header>
+      <h1>Мій продукт</h1>
+    </header>
+
+    <section>
+      <h2>Чому мій продукт кращий</h2>
+      <ul>
+        <li>Функція 1</li>
+        <li>Функція 2</li>
+        <li>Функція 3</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Як мій продукт працює</h2>
+      <p>Тут можна додати опис того, як саме продукт працює та які переваги він надає користувачам.</p>
+    </section>
+
+    <section>
+      <h2>Ціна</h2>
+      <p>Мій продукт коштує $50 за місяць.</p>
+      <button id="buy-btn">Купити зараз</button>
+    </section>
+
+    <footer>
+      <p id="copy">Copyright © 2023</p>
+    </footer>
+
+    <script>
+      // Отримуємо кнопку купівлі та елемент копірайту за допомогою їх id
+      const buyBtn = document.getElementById('buy-btn');
+      const copyEl = document.getElementById('copy');
+
+      // Функція, яка буде викликатися при натисканні на кнопку купівлі
+      const buyProduct = () => {
+        alert('Ви придбали наш продукт!');
+      }
+
+      // Додаємо обробник подій на кнопку купівлі
+      buyBtn.addEventListener('click', buyProduct);
+
+      // Змінюємо текст копірайту за допомогою JavaScript
+      copyEl.textContent = `© ${new Date().getFullYear()} Мій продукт`;
+    </script>
+  </body>
+</html>

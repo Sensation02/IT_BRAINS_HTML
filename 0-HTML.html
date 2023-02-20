@@ -587,5 +587,203 @@
         </p>
       </details>
     </section>
+    <hr />
+    <!-- Таблиці та email верстка -->
+    <section>
+      <details open>
+        <summary><b>Таблиці та email верстка</b></summary>
+        <p>
+          <b class="definition_title">table</b> - тег контейнер для таблиці.
+        </p>
+        <p>
+          <b class="definition_title">tr</b> - тег контейре для рядка таблиці.
+        </p>
+        <p>
+          <b class="definition_title">td</b> - тег однієї комірки в таблиці.
+          <b>tr td</b> разом утворюють один рядок таблиці, в якому є комірка з
+          контентом для стовбців. Далі приклад таблиці.
+        </p>
+        <ul>
+          <h4>Атрибути td</h4>
+          <li>
+            colspan="number" - вказує кількість стовпців, на які повинна
+            розтягнутися комірка.
+          </li>
+          <li>
+            rowspan="number" - вказує на кількіість рядків, на яку повинна
+            розтягнутися комірка.
+          </li>
+          <li>
+            headers="header_id" - вказує заголовок комірки, з якою комірка
+            пов'язана.
+          </li>
+        </ul>
+        <table>
+          <tr>
+            <td colspan="3">Перший</td>
+            <td>Другий</td>
+          </tr>
+          <tr>
+            <td>Перший</td>
+            <td colspan="3" rowspan="2">Другий</td>
+          </tr>
+          <tr>
+            <td>Перший</td>
+            <td>Другий</td>
+            <td>Третій</td>
+          </tr>
+        </table>
+        <p>
+          <b class="definition_title">thead</b> - тег-контейнер, який має в собі
+          верстку рядків, які визначають назву колонки в таблиці.
+        </p>
+        <p>
+          <b class="definition_title">tr</b> - тег-контейнер для рядка із
+          заголовком таблиці. Він також використовується в thead та th
+        </p>
+        <p>
+          <b class="definition_title">th</b> - тег, який використовується
+          замість тегу <b>td</b> для того, щоб утворювати комірку заголовка
+          колонки таблиці.
+        </p>
+        <ul>
+          <h4>Атрибути th</h4>
+          <li>
+            abbr="text" - вказує скороену версія вмісту в комірці заголовка.
+          </li>
+          <li>
+            colspan="number" - вказує кількість стовпців, на яку буде
+            розтягнутий контент комірки заголовка.
+          </li>
+          <li>
+            rowspan="number" - вказує кількість рядків, на яку буде розтягнутий
+            контент комірки заголовка
+          </li>
+          <li>
+            id="name" - вказує одну або кілька заголовків комірок, з якою вона
+            пов'язана.
+          </li>
+          <li>
+            scope="col"/"colgroup"/"row"/"rowgroup" - вказує, чи комірка є
+            заголовком для стовпця, групи стовпців, рядку чи рядків.
+          </li>
+        </ul>
+        <table>
+          <thead>
+            <tr>
+              <th
+                id="name"
+                colspan="1"
+                abbr="Це поле вказує місяць"
+                title="Це поле вказує місяць"
+              >
+                Month
+              </th>
+              <th
+                id="savings"
+                colspan="2"
+                abbr="Це поле вказує збереження за місяць"
+                title="Це поле вказує збереження за місяць"
+              >
+                Savings
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td headers="name">January</td>
+              <td headers="savings">$100</td>
+            </tr>
+            <tr>
+              <td headers="name">February</td>
+              <td headers="savings">$80</td>
+            </tr>
+            <tr>
+              <td headers="name">March</td>
+              <td headers="savings">$100</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td headers="name">Sum</td>
+              <td headers="savings">$280</td>
+            </tr>
+          </tfoot>
+        </table>
+        <p>
+          <b class="definition_title">caption</b> - тег, який визначає заголовок
+          таблиці. Він вставляється одразу після <b>table</b>.
+        </p>
+        <p>
+          <b class="definition_title">colgroup</b> - тег-контейнер для тегу
+          <b>col</b>. Він вставляється одразу після <b>caption</b>.
+        </p>
+        <p>
+          <b class="definition_title">col</b> - тег через який можна надавати
+          стилізацію для певних колонок таблиці один раз без повторення.
+        </p>
+        <h4>Атрибут col та colgroup</h4>
+        <p>
+          <b>span="number"</b> Вказує кількість стовпців, на яку повинен
+          розтягнутися стовпець або група стовпців.
+        </p>
+        <table>
+          <caption>
+            Product orders
+          </caption>
+
+          <!-- тут вказується класом який стовпець якого кольору, тобто перший стовпець тут перший, другий - другий -->
+          <colgroup>
+            <col class="column-1" />
+            <col class="column-2" />
+          </colgroup>
+          <!-- span нам вказує на скільки стовпців має поширитися стиль, тобто на 2: -->
+          <colgroup class="column-3" span="2"></colgroup>
+
+          <thead>
+            <tr>
+              <th>Order</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>ID</th>
+            </tr>
+          </thead>
+
+          <tr>
+            <td>#3476896</td>
+            <td>My first HTML</td>
+            <td>$53</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>#3531233</td>
+            <td>My Test</td>
+            <td>$15</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>#3537456</td>
+            <td>My Test 2</td>
+            <td>$150</td>
+            <td>10000</td>
+          </tr>
+        </table>
+        <p>
+          <b class="definition_title">tbody</b> тег-контейнер для основного
+          контенту в таблиці.
+        </p>
+        <p>
+          <b class="definition_title">tfoot</b> тег-контейнер для кінцевого
+          контенту таблиці. Він використовується тоді коли у таблиці є рядок
+          підсумовуючий основний контент.
+        </p>
+        <h4>email верстка</h4>
+        <p>
+          це верстка емайл-листа, яка буде відображатися як контент листа в
+          поштовому сервісі. Таблична верстка зараз єдиний спосіб створити
+          верстку для емайл-лістів, щоб вони працювали в усіх сервісах однаково
+        </p>
+      </details>
+    </section>
   </body>
 </html>
