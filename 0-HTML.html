@@ -788,7 +788,7 @@
     <hr />
     <!-- Гіпертекст та ресурси -->
     <section>
-      <details open>
+      <details>
         <summary><b>Гіпертекст та ресурси</b></summary>
         <p>
           <b class="definition_title">a</b> - тег для гіперпосилання в HTML
@@ -845,16 +845,21 @@
           </li>
           <li>muted - аудіо має бути вимкнутим.</li>
           <li>src - шлях до аудіо.</li>
-          <li>preload - вказує як завантажити файл
+          <li>
+            preload - вказує як завантажити файл
             <ul>
-              <li>metadata - браузер завантажує лише метадані під час завантаження сторінки.</li>
+              <li>
+                metadata - браузер завантажує лише метадані під час завантаження
+                сторінки.
+              </li>
               <li>auto - завантажує весь аудіо файл.</li>
               <li>none - Не завантажує файл під час завантаження сторінки.</li>
             </ul>
           </li>
         </ul>
         <p>
-          <b class="definition_title">track</b> - тег який визначає тектсові доріжки (субтитри) для елементів <b>audio/video</b>.
+          <b class="definition_title">track</b> - тег який визначає тектсові
+          доріжки (субтитри) для елементів <b>audio/video</b>.
         </p>
         <ul>
           <h4>Атрибути</h4>
@@ -862,7 +867,8 @@
           <li>label - вказує заголовок текстового треку</li>
           <li>src - шлях до файлу</li>
           <li>srclang - мова</li>
-          <li>kind - вказує тип текстової доріжки
+          <li>
+            kind - вказує тип текстової доріжки
             <ul>
               <li>captions - підписи</li>
               <li>chapters - глави</li>
@@ -873,7 +879,8 @@
           </li>
         </ul>
         <p>
-          <b class="definition_title">video</b> - тег-контейнер для тегу <b>source</b>, який дає можливість вказати відео ресурси.
+          <b class="definition_title">video</b> - тег-контейнер для тегу
+          <b>source</b>, який дає можливість вказати відео ресурси.
         </p>
         <ul>
           <h4></h4>
@@ -885,7 +892,8 @@
           <li>height</li>
           <li>width</li>
           <li>poster - зображення яке буде під час завантаження відео</li>
-          <li>preload - як має завантажуватися відео
+          <li>
+            preload - як має завантажуватися відео
             <ul>
               <li>metadata</li>
               <li>auto</li>
@@ -894,8 +902,169 @@
           </li>
         </ul>
         <p>
-          <b class="definition_title">canvas</b> - тег який дозволяє вбудувати векторну графіку в документ та надати динаміку за допомоги JS. Атрибути height та width.
+          <b class="definition_title">canvas</b> - тег який дозволяє вбудувати
+          векторну графіку в документ та надати динаміку за допомоги JS.
+          Атрибути height та width.
         </p>
+      </details>
+    </section>
+    <hr />
+    <!-- Картинки та фрейми -->
+    <section>
+      <details open>
+        <summary><b>Картинки та фрейми</b></summary>
+        <p>
+          <b class="definition_title">img</b> - тег який завантажує картинку в
+          документ
+        </p>
+        <img
+          alt="Image of mountains"
+          longdesc="/images/wallhaven-weq8y7.png"
+          src="/images/wallhaven-weq8y7.png"
+          height="300px"
+          width="400px"
+          loading="eager"
+        />
+        <ul>
+          <h4>Атрибути</h4>
+          <li>alt - альтернативний текст для картинки</li>
+          <li>longdesc - шлях до фалу з описом файлу</li>
+          <li>src - шлях до картинки</li>
+          <li>height - висота</li>
+          <li>width - ширина</li>
+          <li>
+            loading - чи потрібно завантажити фото негайно чи почекати поки все
+            не завантажиться
+          </li>
+          <li>referrerpolicy</li>
+          <li>crossorigin</li>
+          <li>ismap - вказує, що картинка є картою для тегу "a"</li>
+          <li>usemap - підв'язка картинки до тегу карти</li>
+        </ul>
+        <p>
+          <b class="definition_title">map</b> - тег за допомогою якого можна
+          перетворити фото на повноцінну мапу з певними клікабельними областями.
+          <br />
+          Атрибут: <i>name</i> - вказує назву карти зображення.
+        </p>
+        <p>
+          <b class="definition_title">area</b> - тег який визначає область всередині карти
+        </p>
+        <ul>
+          <h4>Атрибути:</h4>
+          <li>alt</li>
+          <li>download</li>
+          <li>href</li>
+          <li>hreflang</li>
+          <li>shape - форма області</li>
+          <li>coords - координати клікабельної зони</li>
+          <li>target - як відкрити </li>
+        </ul>
+        <img
+          src="/images/workplace.jpg"
+          alt="Workplace"
+          usemap="#workmap"
+          width="400"
+          height="379"
+        />
+
+        <map name="workmap">
+          <area
+            shape="rect"
+            coords="34,44,270,350"
+            alt="Computer"
+            href="#comp"
+            target="_blank"
+          />
+          <area
+            shape="rect"
+            coords="290,172,333,250"
+            alt="Phone"
+            href="#phone"
+            target="_blank"
+          />
+          <area
+            shape="circle"
+            coords="337,300,44"
+            alt="Cup of coffee"
+            href="#coffee"
+            target="_blank"
+          />
+        </map>
+        <p>
+          <b class="definition_title">figure</b> - тег контейнер для тегу <i>img</i>
+        </p>
+        <p>
+          <b class="definition_title">figcaption</b> - тег-контейнер для тегу <i>figure</i>
+        </p>
+        <figure>
+          <img src="/images/pic_trulli.jpg" alt="Picture of house">
+
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+        <p>
+          <b class="definition_title">object</b> - тег який вбудовує ресурси в документ. Але в більшості випадків використовується для вбудованих плагінів <br> <br> <b>Плагін</b> - це програма, котра вбудовується в документ.
+        </p>
+        <ul>
+          <h4>Приклади:</h4>
+          <li>Java-аплети</li>
+          <li>Карти</li>
+          <li>2D/3D графіка</li>
+          <li>Цифрові підписи</li>
+          <li>Ігри</li>
+        </ul>
+        <ul>
+          <h4>Атрибути:</h4>
+          <li>height - висота</li>
+          <li>width - ширина</li>
+          <li>data - адреса контенту ресурсу</li>
+          <li>form - до якої форми належить</li>
+          <li>type - тип ресурсу</li>
+          <li>name - ім'я для ресурсу</li>
+          <li>usemap - назва карти зображення яка буде використовуватися</li>
+        </ul>
+        <p>
+          <b class="definition_title">param</b> - тег який передає параметри до тегу <i>object</i>.
+        </p>
+        <ul>
+          <h4>Атрибути</h4>
+          <li>name - назва параметра</li>
+          <li>value - значення параметра</li>
+        </ul>
+        <object data="/videos/IMG_1158.MP4" width="400" height="600">
+          <param name="autoplay" value="true">
+          <!-- param не працює! -->
+        </object>
+        <p>
+          <b class="definition_title">embed</b> - більш сучасний аналог <i>object</i>
+        </p>
+        <ul>
+          <h4>Атрибути:</h4>
+          <li>height</li>
+          <li>width</li>
+          <li>src</li>
+          <li>type</li>
+        </ul>
+        <embed src="/videos/IMG_1158.MP4" width="300" height="500">
+          <p>
+            <b class="definition_title">slot</b> - тег-контейнер для контенту в Shadow DOM. <br> <br> Атрибут: <i>name</i> - визначає ім'я елементу
+          </p>
+          <p>
+            <b class="definition_title">iframe</b> - тег який відкриває інший документ прямо всередині поточного документа.
+          </p>
+          <ul>
+            <h4>Атрибути</h4>
+            <li>hight</li>
+            <li>width</li>
+            <li>src</li>
+            <li>name</li>
+            <li>loading</li>
+            <li>allow</li>
+            <li>allowfullscreen</li>
+            <li>allowpaymentrequest</li>
+            <li>sandbox</li>
+            <li>srcdoc - можливість вписати свій код</li>
+          </ul>
       </details>
     </section>
   </body>
