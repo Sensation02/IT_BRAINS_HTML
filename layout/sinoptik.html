@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <style>
+      th,
+      td {
+        border: 1px solid #b1b0b0;
+        text-align: left;
+        font-size: 13px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><span style="color: gray;">Погода</span> в Києві</h1>
+      <small>столиця України</small>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th id="1"></th>
+            <th id="2" colspan="2">
+              Ніч <br />
+              <img src="#" alt="ніч" />
+            </th>
+            <th id="3" colspan="2">
+              Ранок <br />
+              <img src="#" alt="ранок" />
+            </th>
+            <th id="4" colspan="2">
+              День <br />
+              <img src="#" alt="день" />
+            </th>
+            <th id="5">
+              Вечір <br />
+              <img src="#" alt="вечір" />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><small>Температура, °C</small></th>
+            <td colspan="2">+3<sup>o</sup>C</td>
+            <td colspan="2">+1<sup>o</sup>C</td>
+            <td colspan="2">+5<sup>o</sup>C</td>
+            <td>+2<sup>o</sup>C</td>
+          </tr>
+          <tr>
+            <th scope="row"><small>Відчувається як</small></th>
+            <td colspan="2">0<sup>o</sup>C</td>
+            <td colspan="2">-2<sup>o</sup>C</td>
+            <td colspan="2">+3<sup>o</sup>C</td>
+            <td>+1<sup>o</sup>C</td>
+          </tr>
+          <tr>
+            <th scope="row"><small>Тиск, мм</small></th>
+            <td colspan="2">737</td>
+            <td colspan="2">735</td>
+            <td colspan="2">729</td>
+            <td>734</td>
+          </tr>
+          <tr>
+            <th scope="row"><small>Вологість, %</small></th>
+            <td colspan="2">98</td>
+            <td colspan="2">98</td>
+            <td colspan="2">98</td>
+            <td>98</td>
+          </tr>
+        </tbody>
+      </table>
+      <footer>
+        <p>
+          У Києві протягом усього дня небо буде вкрите хмарами.  Нічний дрібний дощ до ранку стих. Удень та ввечері він
+          йтиме знову, поступово посилюючись.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
