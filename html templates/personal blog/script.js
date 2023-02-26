@@ -1,7 +1,7 @@
 const shareBtns = document.querySelectorAll('.share-btn');
 
-shareBtns.forEach(btn => {
-  btn.addEventListener('click', e => {
+shareBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
     e.preventDefault();
     const title = document.querySelector('title').textContent;
     const url = window.location.href;
