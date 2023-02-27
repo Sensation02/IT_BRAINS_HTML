@@ -17,7 +17,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
     <!-- теги більше для бек-енду -->
     <!-- http-equiv - вказує на метадані для HTTP відповіді -->
@@ -31,7 +32,7 @@
       content="the document's preferred stylesheet"
     /> -->
     <!-- refresh - інтервал оновлення сторінки -->
-    <!-- <meta http-equiv="refresh" content="60" /> -->
+    <!-- <meta http-equiv="refresh" content="30" /> -->
 
     <!-- <style></style> -->
     <!-- Атрибут media: -->
@@ -109,24 +110,39 @@
         </summary>
         <div>
           <p>
-            <b class="definition_title">head</b> - це конфігураційний тег. В ньому задаються параметри нашого сайту.
-            Далі буде розповідатися про все, що пов'язано із цим тегом.
+            <b class="definition_title">head</b> - це конфігураційний тег. В
+            ньому задаються параметри нашого сайту. Далі буде розповідатися про
+            все, що пов'язано із цим тегом.
           </p>
-        </div>
-        <div>
-          <p><b class="definition_title">title</b> - тег назви сторінки сайту у відкритих вкладках браузера.</p>
         </div>
         <div>
           <p>
-            <b class="definition_title">base</b> - тег тег який вказує початковий URL шлях до файлів (тобто до файлу на
-            сервері).
+            <b class="definition_title">title</b> - тег назви сторінки сайту у
+            відкритих вкладках браузера.
+          </p>
+        </div>
+        <div>
+          <p>
+            <b class="definition_title">base</b> - тег тег який вказує
+            початковий URL шлях до файлів (тобто до файлу на сервері).
           </p>
           <ol type="I">
             <h4>Атрибути тегу:</h4>
-            <li><b class="definition_title">target="_blank"</b> - відкривається у новому вікні</li>
-            <li><b class="definition_title">target="_top"</b> - відкривається у батьківському вікні</li>
-            <li><b class="definition_title">target="_parent"</b> - у батьківському фреймі</li>
-            <li><b class="definition_title">target="_self"</b> - в тому ж фреймі</li>
+            <li>
+              <b class="definition_title">target="_blank"</b> - відкривається у
+              новому вікні
+            </li>
+            <li>
+              <b class="definition_title">target="_top"</b> - відкривається у
+              батьківському вікні
+            </li>
+            <li>
+              <b class="definition_title">target="_parent"</b> - у батьківському
+              фреймі
+            </li>
+            <li>
+              <b class="definition_title">target="_self"</b> - в тому ж фреймі
+            </li>
           </ol>
         </div>
         <div>
@@ -136,25 +152,36 @@
           </p>
           <ol>
             <h4>Атрибути тегу:</h4>
-            <li><b class="definition_title">charset="UTF-8"</b> - шифрування</li>
             <li>
-              <b class="definition_title"> name="description" content="Це тестова сторінка" </b>
-              - name - вказуємо тип метаданих; content - контент для назв метаданих; description - опис сторінки.
+              <b class="definition_title">charset="UTF-8"</b> - шифрування
             </li>
             <li>
-              <b class="definition_title">name="generator" content="HTML"</b> - generator - яка технологія
-              використовується для генерації сторінки сайту; не є обов'язковим.
+              <b class="definition_title">
+                name="description" content="Це тестова сторінка"
+              </b>
+              - name - вказуємо тип метаданих; content - контент для назв
+              метаданих; description - опис сторінки.
             </li>
             <li>
-              <b class="definition_title"> name="keywords" content="HTML, CSS, JavaScript" </b>
+              <b class="definition_title">name="generator" content="HTML"</b> -
+              generator - яка технологія використовується для генерації сторінки
+              сайту; не є обов'язковим.
+            </li>
+            <li>
+              <b class="definition_title">
+                name="keywords" content="HTML, CSS, JavaScript"
+              </b>
               - keywords - список ключових слів.
             </li>
             <li>
-              <b class="definition_title">name="author" content="Bazzil aka Sensation02"</b>
+              <b class="definition_title"
+                >name="author" content="Bazzil aka Sensation02"</b
+              >
               - author - хто створив.
             </li>
             <li>
-              <b class="definition_title">name="viewport"</b> - вказує як треба зображати контент
+              <b class="definition_title">name="viewport"</b> - вказує як треба
+              зображати контент
               <ul>
                 <b>content=</b>
                 <li>viewport-fit=cover</li>
@@ -177,69 +204,107 @@
         <summary><b>Основні будівельні блоки</b></summary>
         <br />
         <header>
-          <b class="definition_title">header</b> - Тег вступної секції, шапка. Може бути декілька, в залежності від
-          потреб.
+          <b class="definition_title">header</b> - Тег вступної секції, шапка.
+          Може бути декілька, в залежності від потреб.
         </header>
         <br />
         <!-- тег контейнер в який можна вкладати будь який інший тег з контентом -->
         <div>
-          <b class="definition_title">span</b> - Тег-контейнер для <span>тексту</span>, який його може стилізувати.
+          <b class="definition_title">span</b> - Тег-контейнер для
+          <span>тексту</span>, який його може стилізувати.
 
-          <p><b class="definition_title">р</b> - Параграф. Тег тексту незалежної секції.</p>
+          <p>
+            <b class="definition_title">р</b> - Параграф. Тег тексту незалежної
+            секції.
+          </p>
         </div>
 
         <!-- Тег який визначає основний вміст контенту -->
         <main>
-          <b class="definition_title">main</b>. Вміст цього елемента має бути унікальним для документа. Такого тегу не
-          має бути більше одного. Він не має походити від <i>article, aside, footer, header, nav</i>, тобто тегів які не
-          мають основного контенту.
+          <b class="definition_title">main</b>. Вміст цього елемента має бути
+          унікальним для документа. Такого тегу не має бути більше одного. Він
+          не має походити від <i>article, aside, footer, header, nav</i>, тобто
+          тегів які не мають основного контенту.
         </main>
         <br />
-        <article><b class="definition_title">article</b> - Тег який визначає контент статті в документі.</article>
+        <article>
+          <b class="definition_title">article</b> - Тег який визначає контент
+          статті в документі.
+        </article>
 
         <!-- Тег який вказує незалежні секції. Як дів, але для секції сайту. -->
         <section>
-          <p>в <b class="definition_title">section</b> знаходиться текст незалежної <span>секції</span> сайту</p>
+          <p>
+            в <b class="definition_title">section</b> знаходиться текст
+            незалежної <span>секції</span> сайту
+          </p>
         </section>
 
         <!-- тег який визначає навігаційні посилання -->
         <nav>
           <p>
-            <b class="definition_title">nav</b> - тег який визначає навігаційні посилання. Далі йдуть приклади
-            навігаційного посилання. Тег посилання - <b>а</b>. Зазвичай навігаційна панель зверху, під шапкою сайту бо
-            вище.
+            <b class="definition_title">nav</b> - тег який визначає навігаційні
+            посилання. Далі йдуть приклади навігаційного посилання. Тег
+            посилання - <b>а</b>. Зазвичай навігаційна панель зверху, під шапкою
+            сайту бо вище.
           </p>
           <ul>
             <li>
-              <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a>
+              <a
+                href="https://www.w3schools.com/html/default.asp"
+                target="_blank"
+                >HTML</a
+              >
             </li>
             <li>
-              <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a>
+              <a
+                href="https://www.w3schools.com/css/default.asp"
+                target="_blank"
+                >CSS</a
+              >
             </li>
             <li>
-              <a href="https://www.w3schools.com/js/default.asp" target="_blank">JS</a>
+              <a href="https://www.w3schools.com/js/default.asp" target="_blank"
+                >JS</a
+              >
             </li>
           </ul>
         </nav>
 
         <!-- Тег бічної панелі: -->
         <aside>
-          <p><b class="definition_title">aside</b> - тег бічної панелі, яка знаходиться справа або зліва.</p>
+          <p>
+            <b class="definition_title">aside</b> - тег бічної панелі, яка
+            знаходиться справа або зліва.
+          </p>
           <ul>
             <li>
-              <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a>
+              <a
+                href="https://www.w3schools.com/html/default.asp"
+                target="_blank"
+                >HTML</a
+              >
             </li>
             <li>
-              <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a>
+              <a
+                href="https://www.w3schools.com/css/default.asp"
+                target="_blank"
+                >CSS</a
+              >
             </li>
             <li>
-              <a href="https://www.w3schools.com/js/default.asp" target="_blank">JS</a>
+              <a href="https://www.w3schools.com/js/default.asp" target="_blank"
+                >JS</a
+              >
             </li>
           </ul>
         </aside>
 
         <!-- footer -->
-        <footer><b class="definition_title">footer</b> - Тег який визначає кінцеву секцію, або підвал</footer>
+        <footer>
+          <b class="definition_title">footer</b> - Тег який визначає кінцеву
+          секцію, або підвал
+        </footer>
       </details>
     </section>
     <hr />
@@ -254,8 +319,14 @@
           <li>title='value' - надати заголовок тегу</li>
           <li>style=''value - надати стилю</li>
           <li>lang='value' - інформація про мову контенту</li>
-          <li>contenteditable - вказує, якщо треба дати змогу редагувати вміст тегу</li>
-          <li>dir='ltr' або 'rtl' - вказує напрямок тексту, зліва-направо або справа-наліво.</li>
+          <li>
+            contenteditable - вказує, якщо треба дати змогу редагувати вміст
+            тегу
+          </li>
+          <li>
+            dir='ltr' або 'rtl' - вказує напрямок тексту, зліва-направо або
+            справа-наліво.
+          </li>
           <li>draggable='true' - змога переміщати контент мишкою</li>
         </ul>
       </details>
@@ -272,19 +343,29 @@
         <h5>h5</h5>
         <h6>h6</h6>
 
-        <p><b>em</b> - Тег який <em>наголошує</em>, написаний курсивом, ніби з певним наголосом.</p>
+        <p>
+          <b>em</b> - Тег який <em>наголошує</em>, написаний курсивом, ніби з
+          певним наголосом.
+        </p>
 
         <p><b>strong</b> - тег дуже <strong>важливого</strong> тексту</p>
 
-        <p><b>b</b> - bold, просто <b>жирний</b> текст, але семантично цей текст не важливий</p>
+        <p>
+          <b>b</b> - bold, просто <b>жирний</b> текст, але семантично цей текст
+          не важливий
+        </p>
 
         <p><b>mark</b> - тег який, ніби <mark>маркером</mark>, щось позначає</p>
 
-        <p><b>small</b> - Тег який виділяє <small>неважливий, маленький</small> текст</p>
+        <p>
+          <b>small</b> - Тег який виділяє
+          <small>неважливий, маленький</small> текст
+        </p>
 
         <p>
-          <b>i</b> - тег який виділяє текст в альтернативному голосі, для <i>визначень</i> , назв чогось, щось що в "",
-          <i>цікаве</i>, <i>дивне</i> тощо
+          <b>i</b> - тег який виділяє текст в альтернативному голосі, для
+          <i>визначень</i> , назв чогось, щось що в "", <i>цікаве</i>,
+          <i>дивне</i> тощо
         </p>
 
         <pre>
@@ -294,12 +375,14 @@
         </pre>
 
         <p>
-          <b>s</b> - тег який позначає текст, який став <s>неправильним</s>, <s>не точним</s>, <s>не актуальним</s>, або
-          <s>застарілим</s> з точки зору контенту
+          <b>s</b> - тег який позначає текст, який став <s>неправильним</s>,
+          <s>не точним</s>, <s>не актуальним</s>, або <s>застарілим</s> з точки
+          зору контенту
         </p>
 
         <p>
-          <del><b>del</b></del> - тег який позначає текст який видалений. Він як s, але для видаленого тексту)
+          <del><b>del</b></del> - тег який позначає текст який видалений. Він як
+          s, але для видаленого тексту)
         </p>
 
         <p><b>u</b> - тег який визначає контент, який має <u>помилки</u>.</p>
@@ -317,36 +400,51 @@
         <p><b>sup</b> - 4<sup>2</sup> - тег який визначає надрядковий текст</p>
 
         <p>
-          <b>cite</b> - тег який вказує назву певного контенту. Наприклад <cite>книга</cite>,
-          <cite>фільм</cite>,<cite>картина</cite>. Такий контент відображається курсивом.
+          <b>cite</b> - тег який вказує назву певного контенту. Наприклад
+          <cite>книга</cite>, <cite>фільм</cite>,<cite>картина</cite>. Такий
+          контент відображається курсивом.
         </p>
 
-        <p><b>kbd</b> - тег який вказує що контент є комбінацією клавіш. <kbd>ctrl</kbd>+<kbd>c</kbd></p>
-
-        <p><b>samp</b> - тег який вказує, що контент є <samp>інформацією</samp> від, наприклад, терміналу.</p>
+        <p>
+          <b>kbd</b> - тег який вказує що контент є комбінацією клавіш.
+          <kbd>ctrl</kbd>+<kbd>c</kbd>
+        </p>
 
         <p>
-          <b>var</b> - тег який вказує, що контент є змінною в програмуванні або математичному виразі. такий контент
-          буде відображатися <var>курсивом</var>.
+          <b>samp</b> - тег який вказує, що контент є
+          <samp>інформацією</samp> від, наприклад, терміналу.
+        </p>
+
+        <p>
+          <b>var</b> - тег який вказує, що контент є змінною в програмуванні або
+          математичному виразі. такий контент буде відображатися
+          <var>курсивом</var>.
         </p>
 
         <address>
           <b>address</b> - тег який визначає
-          <div >контактну інформацію про автора</div>
+          <div>контактну інформацію про автора</div>
           статті, сайту тощо. Також курсивним шрифтом.
         </address>
 
-        <p><b>q</b> - <q>Тег який вказує, що контент є цитатою.</q> Такий контент матиме лапки по боках.</p>
+        <p>
+          <b>q</b> - <q>Тег який вказує, що контент є цитатою.</q> Такий контент
+          матиме лапки по боках.
+        </p>
 
         <blockquote cite="/html-4/7-blockquote.html">
-          <b>blockquote</b> - Тег який визначає великий об'єм контенту який був процитований з іншого HTML документа.
-          атрибут cite="URL" - посилання на HTML звідки взята цитата.
+          <b>blockquote</b> - Тег який визначає великий об'єм контенту який був
+          процитований з іншого HTML документа. атрибут cite="URL" - посилання
+          на HTML звідки взята цитата.
         </blockquote>
 
         <p>
-          <b>abbr</b> - тег який вказує що контент є абревіатурою. <abbr title="HyperTextMarkupLanguage">HTML</abbr>,
-          <abbr title="CSS">CSS</abbr>, <abbr title="JavaScript">JavaScript</abbr>. Такому контенту надається пунктирне
-          підкреслення. атрибут title="value" - пояснення до контенту при наведенні на нього.
+          <b>abbr</b> - тег який вказує що контент є абревіатурою.
+          <abbr title="HyperTextMarkupLanguage">HTML</abbr>,
+          <abbr title="CSS">CSS</abbr>,
+          <abbr title="JavaScript">JavaScript</abbr>. Такому контенту надається
+          пунктирне підкреслення. атрибут title="value" - пояснення до контенту
+          при наведенні на нього.
         </p>
 
         <p>
@@ -354,11 +452,13 @@
             <abbr
               title="тег який вказує що контент є терміном, який вперше
             з'явився в HTML документі. такий термін відображається курсивним
-            шрифтом.">
+            шрифтом."
+            >
               <b>dfn</b>
             </abbr>
           </dfn>
-          - тег який вказує що контент є терміном, який вперше з'явився в HTML документі. такий термін відображається
+          - тег який вказує що контент є терміном, який вперше з'явився в HTML
+          документі. такий термін відображається
           <i>курсивним</i>
           шрифтом. title="value" - пояснення до контенту.
         </p>
@@ -367,15 +467,17 @@
         <details>
           <summary><b>Теги які не мають повної підтримки:</b></summary>
           <p>
-            Тобто не всі браузери не мають їх підтримку. Старі браузери можуть не підтримувати. Або нові браузери які не
-            підтримують старі теги.
+            Тобто не всі браузери не мають їх підтримку. Старі браузери можуть
+            не підтримувати. Або нові браузери які не підтримують старі теги.
           </p>
 
-          <p><b>time</b> - Open from <time>10:00</time> to <time>21:00</time></p>
+          <p>
+            <b>time</b> - Open from <time>10:00</time> to <time>21:00</time>
+          </p>
 
           <p>
-            <b>data</b> - тег який перекладає контент на мову для програм, де value="" вказує на якусь частину з
-            бек-енду.
+            <b>data</b> - тег який перекладає контент на мову для програм, де
+            value="" вказує на якусь частину з бек-енду.
           </p>
           <div>
             <data value="21034">Tomato</data>
@@ -383,8 +485,8 @@
           </div>
 
           <p>
-            <b>wbr</b> - тег який вказує браузеру де можна зробити <wbr /> переніс на новий рядок якщо рядок дуже
-            довгий.
+            <b>wbr</b> - тег який вказує браузеру де можна зробити
+            <wbr /> переніс на новий рядок якщо рядок дуже довгий.
           </p>
         </details>
       </details>
@@ -396,8 +498,9 @@
         <summary><strong>Списки</strong></summary>
         <h4>Впорядкований список: ol, li - list item</h4>
         <p>
-          reversed - зворотня нумерація списку. start="number" - з якого номера починати. type - 1/A/a/I/i - тип
-          впорядкованого списку. value - атрибут li - вказує номер елемента списку, працює лише з ol.
+          reversed - зворотня нумерація списку. start="number" - з якого номера
+          починати. type - 1/A/a/I/i - тип впорядкованого списку. value -
+          атрибут li - вказує номер елемента списку, працює лише з ol.
         </p>
         <h4>start="A" type="A":</h4>
         <ol start="A" type="A">
@@ -444,7 +547,10 @@
         <summary><b>Списки та скрипти</b></summary>
         <br />
         <details>
-          <summary>dl (definition list), dt (definition title), dd (definition description)</summary>
+          <summary>
+            dl (definition list), dt (definition title), dd (definition
+            description)
+          </summary>
           <dl>
             <dt><b>"dl"</b></dt>
             <dd>тег контейнер для списку описів термінів.</dd>
@@ -459,20 +565,27 @@
         </details>
         <hr />
         <p>
-          <b>hr</b> - тег який відокремлює різний тематичний контент. Він надає горизонтальну лінію, яка
-          використовується для розділення незалежного вмісту в HTML документі.
+          <b>hr</b> - тег який відокремлює різний тематичний контент. Він надає
+          горизонтальну лінію, яка використовується для розділення незалежного
+          вмісту в HTML документі.
         </p>
         <hr />
         <p>
-          <b>details</b> - тег-контейнер для контенту, який є додатковим деталями, які користувач може відкривати та
-          закривати. атрибут "open" вказує, що контент має бути зразу відкритим.
+          <b>details</b> - тег-контейнер для контенту, який є додатковим
+          деталями, які користувач може відкривати та закривати. атрибут "open"
+          вказує, що контент має бути зразу відкритим.
         </p>
         <hr />
-        <p><b>summary</b> - тег для заголовка деталей. При натисканні на нього буде відкриватися контент в details</p>
+        <p>
+          <b>summary</b> - тег для заголовка деталей. При натисканні на нього
+          буде відкриватися контент в details
+        </p>
         <hr />
         <p>
-          <b>dialog</b> - тег-контейнер для діалогового вікна. Такий контент буде відображатися по центру вікна. Атрибут
-          "open" вказує, що діалоговий елемент активний і користувач може його бачити та з ним взаємодіяти
+          <b>dialog</b> - тег-контейнер для діалогового вікна. Такий контент
+          буде відображатися по центру вікна. Атрибут "open" вказує, що
+          діалоговий елемент активний і користувач може його бачити та з ним
+          взаємодіяти
         </p>
       </details>
     </section>
@@ -481,17 +594,31 @@
     <section>
       <details>
         <summary><b>Таблиці та email верстка</b></summary>
-        <p><b class="definition_title">table</b> - тег контейнер для таблиці.</p>
-        <p><b class="definition_title">tr</b> - тег контейре для рядка таблиці.</p>
         <p>
-          <b class="definition_title">td</b> - тег однієї комірки в таблиці. <b>tr td</b> разом утворюють один рядок
-          таблиці, в якому є комірка з контентом для стовбців. Далі приклад таблиці.
+          <b class="definition_title">table</b> - тег контейнер для таблиці.
+        </p>
+        <p>
+          <b class="definition_title">tr</b> - тег контейре для рядка таблиці.
+        </p>
+        <p>
+          <b class="definition_title">td</b> - тег однієї комірки в таблиці.
+          <b>tr td</b> разом утворюють один рядок таблиці, в якому є комірка з
+          контентом для стовбців. Далі приклад таблиці.
         </p>
         <ul>
           <h4>Атрибути td</h4>
-          <li>colspan="number" - вказує кількість стовпців, на які повинна розтягнутися комірка.</li>
-          <li>rowspan="number" - вказує на кількіість рядків, на яку повинна розтягнутися комірка.</li>
-          <li>headers="header_id" - вказує заголовок комірки, з якою комірка пов'язана.</li>
+          <li>
+            colspan="number" - вказує кількість стовпців, на які повинна
+            розтягнутися комірка.
+          </li>
+          <li>
+            rowspan="number" - вказує на кількіість рядків, на яку повинна
+            розтягнутися комірка.
+          </li>
+          <li>
+            headers="header_id" - вказує заголовок комірки, з якою комірка
+            пов'язана.
+          </li>
         </ul>
         <table>
           <tr>
@@ -509,37 +636,57 @@
           </tr>
         </table>
         <p>
-          <b class="definition_title">thead</b> - тег-контейнер, який має в собі верстку рядків, які визначають назву
-          колонки в таблиці.
+          <b class="definition_title">thead</b> - тег-контейнер, який має в собі
+          верстку рядків, які визначають назву колонки в таблиці.
         </p>
         <p>
-          <b class="definition_title">tr</b> - тег-контейнер для рядка із заголовком таблиці. Він також використовується
-          в thead та th
+          <b class="definition_title">tr</b> - тег-контейнер для рядка із
+          заголовком таблиці. Він також використовується в thead та th
         </p>
         <p>
-          <b class="definition_title">th</b> - тег, який використовується замість тегу <b>td</b> для того, щоб
-          утворювати комірку заголовка колонки таблиці.
+          <b class="definition_title">th</b> - тег, який використовується
+          замість тегу <b>td</b> для того, щоб утворювати комірку заголовка
+          колонки таблиці.
         </p>
         <ul>
           <h4>Атрибути th</h4>
-          <li>abbr="text" - вказує скороену версія вмісту в комірці заголовка.</li>
-          <li>colspan="number" - вказує кількість стовпців, на яку буде розтягнутий контент комірки заголовка.</li>
-          <li>rowspan="number" - вказує кількість рядків, на яку буде розтягнутий контент комірки заголовка</li>
-          <li>id="name" - вказує одну або кілька заголовків комірок, з якою вона пов'язана.</li>
           <li>
-            scope="col"/"colgroup"/"row"/"rowgroup" - вказує, чи комірка є заголовком для стовпця, групи стовпців, рядку
-            чи рядків.
+            abbr="text" - вказує скороену версія вмісту в комірці заголовка.
+          </li>
+          <li>
+            colspan="number" - вказує кількість стовпців, на яку буде
+            розтягнутий контент комірки заголовка.
+          </li>
+          <li>
+            rowspan="number" - вказує кількість рядків, на яку буде розтягнутий
+            контент комірки заголовка
+          </li>
+          <li>
+            id="name" - вказує одну або кілька заголовків комірок, з якою вона
+            пов'язана.
+          </li>
+          <li>
+            scope="col"/"colgroup"/"row"/"rowgroup" - вказує, чи комірка є
+            заголовком для стовпця, групи стовпців, рядку чи рядків.
           </li>
         </ul>
         <table>
           <thead>
             <tr>
-              <th id="name" colspan="1" abbr="Це поле вказує місяць" title="Це поле вказує місяць">Month</th>
+              <th
+                id="name"
+                colspan="1"
+                abbr="Це поле вказує місяць"
+                title="Це поле вказує місяць"
+              >
+                Month
+              </th>
               <th
                 id="savings"
                 colspan="2"
                 abbr="Це поле вказує збереження за місяць"
-                title="Це поле вказує збереження за місяць">
+                title="Це поле вказує збереження за місяць"
+              >
                 Savings
               </th>
             </tr>
@@ -566,19 +713,22 @@
           </tfoot>
         </table>
         <p>
-          <b class="definition_title">caption</b> - тег, який визначає заголовок таблиці. Він вставляється одразу після
-          <b>table</b>.
+          <b class="definition_title">caption</b> - тег, який визначає заголовок
+          таблиці. Він вставляється одразу після <b>table</b>.
         </p>
         <p>
-          <b class="definition_title">colgroup</b> - тег-контейнер для тегу <b>col</b>. Він вставляється одразу після
-          <b>caption</b>.
+          <b class="definition_title">colgroup</b> - тег-контейнер для тегу
+          <b>col</b>. Він вставляється одразу після <b>caption</b>.
         </p>
         <p>
-          <b class="definition_title">col</b> - тег через який можна надавати стилізацію для певних колонок таблиці один
-          раз без повторення.
+          <b class="definition_title">col</b> - тег через який можна надавати
+          стилізацію для певних колонок таблиці один раз без повторення.
         </p>
         <h4>Атрибут col та colgroup</h4>
-        <p><b>span="number"</b> Вказує кількість стовпців, на яку повинен розтягнутися стовпець або група стовпців.</p>
+        <p>
+          <b>span="number"</b> Вказує кількість стовпців, на яку повинен
+          розтягнутися стовпець або група стовпців.
+        </p>
         <table>
           <caption>
             Product orders
@@ -620,15 +770,20 @@
             <td>10000</td>
           </tr>
         </table>
-        <p><b class="definition_title">tbody</b> тег-контейнер для основного контенту в таблиці.</p>
         <p>
-          <b class="definition_title">tfoot</b> тег-контейнер для кінцевого контенту таблиці. Він використовується тоді
-          коли у таблиці є рядок підсумовуючий основний контент.
+          <b class="definition_title">tbody</b> тег-контейнер для основного
+          контенту в таблиці.
+        </p>
+        <p>
+          <b class="definition_title">tfoot</b> тег-контейнер для кінцевого
+          контенту таблиці. Він використовується тоді коли у таблиці є рядок
+          підсумовуючий основний контент.
         </p>
         <h4>email верстка</h4>
         <p>
-          це верстка емайл-листа, яка буде відображатися як контент листа в поштовому сервісі. Таблична верстка зараз
-          єдиний спосіб створити верстку для емайл-лістів, щоб вони працювали в усіх сервісах однаково
+          це верстка емайл-листа, яка буде відображатися як контент листа в
+          поштовому сервісі. Таблична верстка зараз єдиний спосіб створити
+          верстку для емайл-лістів, щоб вони працювали в усіх сервісах однаково
         </p>
       </details>
     </section>
@@ -637,7 +792,10 @@
     <section>
       <details>
         <summary><b>Гіпертекст та ресурси</b></summary>
-        <p><b class="definition_title">a</b> - тег для гіперпосилання в HTML документі.</p>
+        <p>
+          <b class="definition_title">a</b> - тег для гіперпосилання в HTML
+          документі.
+        </p>
         <ul>
           <h4>Атрибути</h4>
           <li>
@@ -654,12 +812,15 @@
           <li>type - вказує MIME-тип файлу за посиланням.</li>
           <li>media - приймає будь який дійсний медіазапит.</li>
           <li>hreflang - визначає мову.</li>
-          <li>download - вказує, що посилання це файл і його треба завантажити з певно назвою.</li>
+          <li>
+            download - вказує, що посилання це файл і його треба завантажити з
+            певно назвою.
+          </li>
           <li>rel - відношення до поточного посилання</li>
         </ul>
         <p>
-          <b class="definition_title">source</b> - тег який вбудовує ресурси в HTMl документ. Ресурс - це сторонній
-          файл: фото, аудіо або відео.
+          <b class="definition_title">source</b> - тег який вбудовує ресурси в
+          HTMl документ. Ресурс - це сторонній файл: фото, аудіо або відео.
         </p>
         <ul>
           <h4>Атрибути</h4>
@@ -669,32 +830,38 @@
           <li>type</li>
         </ul>
         <p>
-          <b class="definition_title">picture</b> - тег контейнер для тегу <b>source</b>, який дає можливість вказати
-          фото ресурси.
+          <b class="definition_title">picture</b> - тег контейнер для тегу
+          <b>source</b>, який дає можливість вказати фото ресурси.
         </p>
         <p>
-          <b class="definition_title">audio</b> - тег-контейнер для тегу <b>source</b>, який дає можливість вказати
-          аудіо ресурси.
+          <b class="definition_title">audio</b> - тег-контейнер для тегу
+          <b>source</b>, який дає можливість вказати аудіо ресурси.
         </p>
         <ul>
           <h4>Атрибути</h4>
           <li>autoplay - аудіо почне грати як тільки завантажиться.</li>
           <li>controls - вказує, що аудіоелементи повинні відображатися.</li>
-          <li>loop - вказує, що аудіо почнетсья заново, щоразу, коли воно закінчиться.</li>
+          <li>
+            loop - вказує, що аудіо почнетсья заново, щоразу, коли воно
+            закінчиться.
+          </li>
           <li>muted - аудіо має бути вимкнутим.</li>
           <li>src - шлях до аудіо.</li>
           <li>
             preload - вказує як завантажити файл
             <ul>
-              <li>metadata - браузер завантажує лише метадані під час завантаження сторінки.</li>
+              <li>
+                metadata - браузер завантажує лише метадані під час завантаження
+                сторінки.
+              </li>
               <li>auto - завантажує весь аудіо файл.</li>
               <li>none - Не завантажує файл під час завантаження сторінки.</li>
             </ul>
           </li>
         </ul>
         <p>
-          <b class="definition_title">track</b> - тег який визначає тектсові доріжки (субтитри) для елементів
-          <b>audio/video</b>.
+          <b class="definition_title">track</b> - тег який визначає тектсові
+          доріжки (субтитри) для елементів <b>audio/video</b>.
         </p>
         <ul>
           <h4>Атрибути</h4>
@@ -714,8 +881,8 @@
           </li>
         </ul>
         <p>
-          <b class="definition_title">video</b> - тег-контейнер для тегу <b>source</b>, який дає можливість вказати
-          відео ресурси.
+          <b class="definition_title">video</b> - тег-контейнер для тегу
+          <b>source</b>, який дає можливість вказати відео ресурси.
         </p>
         <ul>
           <h4></h4>
@@ -737,8 +904,9 @@
           </li>
         </ul>
         <p>
-          <b class="definition_title">canvas</b> - тег який дозволяє вбудувати векторну графіку в документ та надати
-          динаміку за допомоги JS. Атрибути height та width.
+          <b class="definition_title">canvas</b> - тег який дозволяє вбудувати
+          векторну графіку в документ та надати динаміку за допомоги JS.
+          Атрибути height та width.
         </p>
       </details>
     </section>
@@ -747,14 +915,18 @@
     <section>
       <details>
         <summary><b>Картинки та фрейми</b></summary>
-        <p><b class="definition_title">img</b> - тег який завантажує картинку в документ</p>
+        <p>
+          <b class="definition_title">img</b> - тег який завантажує картинку в
+          документ
+        </p>
         <img
           alt="Image of mountains"
           longdesc="/images/wallhaven-weq8y7.png"
           src="/images/wallhaven-weq8y7.png"
           height="300px"
           width="400px"
-          loading="eager" />
+          loading="eager"
+        />
         <ul>
           <h4>Атрибути</h4>
           <li>alt - альтернативний текст для картинки</li>
@@ -762,19 +934,25 @@
           <li>src - шлях до картинки</li>
           <li>height - висота</li>
           <li>width - ширина</li>
-          <li>loading - чи потрібно завантажити фото негайно чи почекати поки все не завантажиться</li>
+          <li>
+            loading - чи потрібно завантажити фото негайно чи почекати поки все
+            не завантажиться
+          </li>
           <li>referrerpolicy</li>
           <li>crossorigin</li>
           <li>ismap - вказує, що картинка є картою для тегу "a"</li>
           <li>usemap - підв'язка картинки до тегу карти</li>
         </ul>
         <p>
-          <b class="definition_title">map</b> - тег за допомогою якого можна перетворити фото на повноцінну мапу з
-          певними клікабельними областями.
+          <b class="definition_title">map</b> - тег за допомогою якого можна
+          перетворити фото на повноцінну мапу з певними клікабельними областями.
           <br />
           Атрибут: <i>name</i> - вказує назву карти зображення.
         </p>
-        <p><b class="definition_title">area</b> - тег який визначає область всередині карти</p>
+        <p>
+          <b class="definition_title">area</b> - тег який визначає область
+          всередині карти
+        </p>
         <ul>
           <h4>Атрибути:</h4>
           <li>alt</li>
@@ -785,12 +963,36 @@
           <li>coords - координати клікабельної зони</li>
           <li>target - як відкрити</li>
         </ul>
-        <img src="/images/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379" />
+        <img
+          src="/images/workplace.jpg"
+          alt="Workplace"
+          usemap="#workmap"
+          width="400"
+          height="379"
+        />
 
         <map name="workmap">
-          <area shape="rect" coords="34,44,270,350" alt="Computer" href="#comp" target="_blank" />
-          <area shape="rect" coords="290,172,333,250" alt="Phone" href="#phone" target="_blank" />
-          <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="#coffee" target="_blank" />
+          <area
+            shape="rect"
+            coords="34,44,270,350"
+            alt="Computer"
+            href="#comp"
+            target="_blank"
+          />
+          <area
+            shape="rect"
+            coords="290,172,333,250"
+            alt="Phone"
+            href="#phone"
+            target="_blank"
+          />
+          <area
+            shape="circle"
+            coords="337,300,44"
+            alt="Cup of coffee"
+            href="#coffee"
+            target="_blank"
+          />
         </map>
         <p>
           <b class="definition_title">figure</b> - тег контейнер для тегу
@@ -806,8 +1008,9 @@
           <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
         </figure>
         <p>
-          <b class="definition_title">object</b> - тег який вбудовує ресурси в документ. Але в більшості випадків
-          використовується для вбудованих плагінів <br />
+          <b class="definition_title">object</b> - тег який вбудовує ресурси в
+          документ. Але в більшості випадків використовується для вбудованих
+          плагінів <br />
           <br />
           <b>Плагін</b> - це програма, котра вбудовується в документ.
         </p>
@@ -829,7 +1032,10 @@
           <li>name - ім'я для ресурсу</li>
           <li>usemap - назва карти зображення яка буде використовуватися</li>
         </ul>
-        <p><b class="definition_title">param</b> - тег який передає параметри до тегу <i>object</i>.</p>
+        <p>
+          <b class="definition_title">param</b> - тег який передає параметри до
+          тегу <i>object</i>.
+        </p>
         <ul>
           <h4>Атрибути</h4>
           <li>name - назва параметра</li>
@@ -852,13 +1058,14 @@
         </ul>
         <embed src="/videos/IMG_1158.MP4" width="300" height="500" />
         <p>
-          <b class="definition_title">slot</b> - тег-контейнер для контенту в Shadow DOM. <br />
+          <b class="definition_title">slot</b> - тег-контейнер для контенту в
+          Shadow DOM. <br />
           <br />
           Атрибут: <i>name</i> - визначає ім'я елементу
         </p>
         <p>
-          <b class="definition_title">iframe</b> - тег який відкриває інший документ прямо всередині поточного
-          документа.
+          <b class="definition_title">iframe</b> - тег який відкриває інший
+          документ прямо всередині поточного документа.
         </p>
         <ul>
           <h4>Атрибути</h4>
@@ -873,6 +1080,203 @@
           <li>sandbox</li>
           <li>srcdoc - можливість вписати свій код</li>
         </ul>
+      </details>
+    </section>
+    <hr />
+    <!-- Форми та поля -->
+    <section>
+      <details open>
+        <summary><b>Форми та поля</b></summary>
+        <p><b class="definition_title">form</b> - тег-контейнер для форми</p>
+        <ul>
+          <h4>Атрибути</h4>
+          <li>accept-charset - тип кодування символів</li>
+          <li>action - куди надсилає форму</li>
+          <li>autocomplete - автозаповнення форм</li>
+          <li>method - метод надсилання</li>
+          <li>name - назва форми</li>
+          <li>novalidate - форма не повинна перевірятися на валідацію</li>
+          <li>rel</li>
+          <li>target</li>
+          <li>
+            encrypt - вказує тип кодування даних
+            <ul>
+              <li>application/x-www-form-urlencoded</li>
+              <li>multipart/form-data</li>
+              <li>text/plain</li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          <b class="definition_title">input</b> - це тег, який визначає поле для
+          введення даних
+        </p>
+        <ul>
+          <h4>Атрибути</h4>
+          <li>form - Вказує ID форми до якої належить елемент</li>
+          <li>name</li>
+          <li>autofocus - Вказує автоматичний фокус</li>
+          <li>disabled - Вказує, що елемент неактивний</li>
+          <li>autocomplete - Вказує автозаповнення елементу</li>
+          <li>
+            placeholder - Вказує плейсхолдер елемента(написано "сірим", що треба
+            вводити)
+          </li>
+          <li>size - Вказує ширину елемента</li>
+          <li>value - Вказує значення елемента</li>
+          <li>required - Вказує, що поле обов’язкове</li>
+          <li>formnovalidate - Вказує, що інпут не повинен валідуватись</li>
+          <li>pattern - Вказує регулярний вираз, для перевірки</li>
+          <li>maxlength - Вказує максимальну кількість символів</li>
+          <li>minlength - Вказує мінімальну кількість символів</li>
+          <li>min - Вказує мінімальне значення</li>
+          <li>max - Вказує максимальне значення</li>
+          <li>readonly - Вказує, що поле лише для читання</li>
+          <h4>Атрибут Type</h4>
+          <ul>
+            <li>text - Визначає поле вводу тексту</li>
+            <li>color - Визначає поле вибору кольору</li>
+            <li>email - Визначає поле вводу пошти</li>
+            <li>hidden - Визначає що елемент буде прихованим</li>
+            <li>number - Визначає поле вводу числа</li>
+            <li>password - Визначає поле вводу пароля</li>
+            <li>tel - Визначає поле вводу телефону</li>
+            <li>datetime-local - Визначає дату (рік, місяць, день, час)</li>
+            <li>date - Визначає дату (рік, місяць, день)</li>
+            <li>month - Визначає дату (рік, місяць)</li>
+            <li>time - Визначає час</li>
+            <li>week - Визначає дату (рік, тиждень)</li>
+            <li>button - Визначає кнопку</li>
+            <li>checkbox - Визначає кнопку</li>
+            <li>radio - Визначає радіолемент</li>
+            <li>range - Визначає елемент для задання проміжку</li>
+            <li>reset - Визначає кнопку для скидання форми</li>
+            <li>submit - Визначає кнопку для відправки форми</li>
+            <li>search - Визначає пошуковий рядок</li>
+            <li>file - Визначає поле завантаження даних</li>
+            <li>image - Визначає зображення</li>
+            <h5>type: number</h5>
+            <li>step - Вказує інтервал між числами</li>
+            <h5>type: image</h5>
+            <li>alt - Вказує альтернативний текст для зображень</li>
+            <li>formaction - Перепризначає посилання для запиту форми</li>
+            <li>formmethod - Вказує метод відправки форми</li>
+            <li>height - Вказує висоту елемента</li>
+            <li>width - Вказує ширину елемента</li>
+            <li>src</li>
+            <li>formtarget - Вказує де відобразити відповідь від форми</li>
+            <li>formenctype - Вказує, як слід кодувати дані</li>
+            <h5>type: submit</h5>
+            <li>formaction - Перепризначає посилання для запиту форми</li>
+            <li>formmethod - Вказує метод відправки форми</li>
+            <li>formtarget - Вказує де відобразити відповідь від форми</li>
+            <li>formenctype - Вказує, як слід кодувати дані</li>
+            <h5>type: file</h5>
+            <li>multiple - Вказує, що можна вибрати декілька значень</li>
+            <li>accept - Вказує формат файлу для завантаження</li>
+            <h5>type: checkbox, radio</h5>
+            <li>checked - Вказує, що елемент повинен бути вибраний</li>
+            <li>name - Треба вказувати для прив’язки radio</li>
+          </ul>
+        </ul>
+        <div>
+          <form>
+            type text:
+            <input type="text" /> <br />
+            type color:
+            <input type="color" /> <br />
+            type email:
+            <input type="email" /> <br />
+            type hidden:
+            <input type="hidden" /> <br />
+            type number:
+            <input type="number" /> <br />
+            type password:
+            <input type="password" /> <br />
+            type tel:
+            <input type="tel" /> <br />
+            type datetime-local:
+            <input type="datetime-local" /> <br />
+            type date:
+            <input type="date" /> <br />
+            type month:
+            <input type="month" /> <br />
+            type time:
+            <input type="time" /> <br />
+            type week:
+            <input type="week" /> <br />
+            type button:
+            <input type="button" value="Test" /> <br />
+            type checkbox:
+            <input type="checkbox" /> <br />
+            type radio:
+            <input type="radio" /> <br />
+            type range:
+            <input type="range" /> <br />
+            type reset
+            <input type="reset" /> <br />
+            type submit:
+            <input type="submit" /> <br />
+            type search:
+            <input type="search" /> <br />
+            type file:
+            <input type="file" accept="image/*" /> <br />
+            type image:
+            <input
+              type="image"
+              src="/images/img_submit.gif"
+              alt="submit"
+              formtarget="_top"
+            />
+            <br />
+            type number step 5:
+            <input type="number" step="5" /> <br />
+          </form>
+        </div>
+        <p>
+          <b class="definition_title">label</b> - тег який є заголовком
+          <i>input</i>
+        </p>
+        <ul>
+          <li>for - Вказує id інпута, якому належить заголовок</li>
+          <li>form - Вказує id форми, якій належить заголовок</li>
+        </ul>
+        <label form="form_id">My Form</label>
+        <form id="form_id">
+          <label for="input_id">My Input</label>
+          <input id="input_id" />
+        </form>
+        <p>
+          <b class="definition_title">button</b> - тег для кнопки яку можна
+          натиснути
+        </p>
+        <ul>
+          <h4>Атрибути</h4>
+          <li>
+            type - Вказує тип кнопки
+            <ul>
+              <li>button</li>
+              <li>reset</li>
+              <li>submit</li>
+            </ul>
+          </li>
+          <li>autofocus - Вказує автоматичний фокус на кнопку</li>
+          <li>disabled - Вказує, що кнопку слід виключити</li>
+          <li>name</li>
+          <li>value - Вказує початкове значення для кнопки</li>
+          <li>form - Вказує, яка форма кнопки належить</li>
+          <li>formaction - Вказує, куди надсилати форму форми</li>
+          <li>formtarget - Вказує як треба відкрити посилання</li>
+          <li>formnovalidate - Вказує, що кнопка не повинна валідуватись</li>
+          <li>formenctype - Вказує, як слід кодувати дані</li>
+        </ul> <br>
+        <label for="form_id_2"><b>Send Files!</b></label>
+        <form name="form" id="form_id_2">
+          <input type="file" name="file" form="form_id_2" multiple />
+          <button form="form_id_2" type="button" formtarget="_self">
+            Send!
+          </button>
+        </form>
       </details>
     </section>
   </body>
